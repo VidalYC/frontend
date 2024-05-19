@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
-export default {
+
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -9,13 +10,11 @@ export default {
   ],
   theme: {
     extend: {
-      extend: {
-        backgroundImage: {
-          app: "url('/img/02.jpeg')",
-        },
-        colors: {
-          "vtd-primary": colors.blue,
-        },
+      backgroundImage: {
+        app: "url('/img/01.png')",
+      },
+      colors: {
+        "vtd-primary": colors.indigo,
       },
     },
   },
